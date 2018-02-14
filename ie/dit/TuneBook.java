@@ -9,17 +9,18 @@ import java.util.ArrayList;
 public class TuneBook
 {
 
-	ArrayList<String> Tunes = new ArrayList<String>(x,title,altTitle);
+	ArrayList<String> tunes = new ArrayList<String>();
 
-	public TuneBook(String[] hnj0) throws IOException
+
+	public TuneBook(String[] file) throws IOException
 	{
 
 		BufferReader inputStream = null;
 
    	 try {
 
-    	inputStream = new BufferedReader(new FileReader(hnj0.abc));
-            in = new FileInputStream(hnj0.abc);
+    	inputStream = new BufferedReader(new FileReader(concat(file".abc"));
+            in = new FileInputStream(concat(file".abc"));
             int c;
 
             while ((c = in.read()) != -1) {
