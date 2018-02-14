@@ -31,7 +31,7 @@ public class Tune
 		StringBuffer sb= new StringBuffer();
 		for(int x : x)
 		{
-			sb.append(x, title, altTitle);
+			sb.append(x + "," + title + "," + altTitle);
 		}
 		return sb.toString();
 	}
