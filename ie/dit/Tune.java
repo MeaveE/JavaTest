@@ -1,30 +1,41 @@
 package ie.dit;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.FileReader;
+
 public class Tune
 {
-	private int x(public )
-	{
 
+	private int x;	
+	private String title;
+	private String altTitle;
+	private String notation;
+
+	public int x()
+	{
+		return x;
 	}
-	private String tile(public)
+	public String title()
 	{
-
+		return title;	
 	}
-	private String altTitle(public)
+	public String altTitle()
 	{
-
+		return altTitle;
 	}
-	private String notation(public)
-	{
-
+	public String notation()
+	{	
+		return notation;
 	}
 
 	public String toString()
 	{
 		StringBuffer sb= new StringBuffer();
-		for(int x : x ||String title:title || String altTitle:altTitle)
+		for(int x : x)
 		{
-			sb.append(x,tile,altTitle);
+			sb.append(x, title, altTitle);
 		}
 		return sb.toString();
 	}
